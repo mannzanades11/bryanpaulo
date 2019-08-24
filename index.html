@@ -1,0 +1,128 @@
+<html>
+<head>
+<style>
+ul{
+margin-left:-15px;
+}
+.accordion {
+height:90px;
+ margin-top:20px;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+h1{
+margin-top:100px;
+font-size:40px;
+font-family:Agency FB;
+color:#999999;
+
+}
+body{
+margin-left:20px;
+background-color:white;
+}
+p{
+color:#999999;
+}
+a{
+font-size:20px;
+font-family:Agency FB;
+text-decoration:none;
+color: gray;
+}
+a:hover{
+
+color:black;
+transition:.1s;
+}
+li{
+margin-top:5px;
+}
+</style>
+</head>
+<body>
+<H1>TERM</h1>
+<button class="accordion"><p style="font-family:Agency FB; font-size:20px; font-weight:bold;">PRELIM</button>
+<div class="panel">
+<p style="font-family:Agency FB; color:black; font-size:20px;">LECTURES
+   
+   <ul type="none">
+	
+   <li><a href="Intro.html" target="2"> Chapter 1: Introduction </a></li>
+   <li><a href="Texts.html" target="2"> Chapter 2: Texts </a></li>
+     <li><a href="Image.html" target="2"> Chapter 3: Images </a></li>
+   </ul>
+<p style="font-family:Agency FB; color:black; font-size:20px;">ACTIVITIES
+		   <ul type="none">
+		<li><a href="framesetting.html" target="2"> Motivational Quotes</a></li>
+   <li><a href="ex2prelim.html" target="2"> Text Based Website</a></li>
+   <li><a href="traffic.html" target="2"> Traffic Signs</a></li>
+   </ul>
+</div>
+
+<button class="accordion"><p style="font-family:Agency FB; font-size:20px; font-weight:bold;">MIDTERM</button>
+<div class="panel">
+<p style="font-family:Agency FB; color:black; font-size:20px;">LECTURES
+   <ul type="none">
+<li><a href="sound.html" target="2">Chapter 4: Sound</a></li>
+<li><a href="chap5" target="2">Chapter 5: Animation</a></li>
+<li><a href="dream" target="2">Dreamweaver-Tutorial</a></li>
+<li><a href="animate" target="2">Animate Basics</a></li>
+   <li><a href=""></a></li>
+      </ul>
+<p style="font-family:Agency FB; color:black; font-size:20px;">ACTIVITIES
+		   <ul type="none">
+		<li><a href="indexsound.html" target="2">Sound</a></li>
+		<li><a href="tunogtae.html" target="2">Tunog Tao</a></li>
+		<li><a href="ani.html" target="2">Animation</a></li>
+
+</div>
+<button class="accordion"><p style="font-family:Agency FB; font-size:20px; font-weight:bold;">FINALS</button>
+<div class="panel">
+<p style="font-family:Agency FB; color:black; font-size:20px;">LECTURES
+   <ul type="none">
+
+   <li><a href=""></a></li>
+      </ul>
+<p style="font-family:Agency FB; color:black; font-size:20px;">ACTIVITIES
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
+</html>
